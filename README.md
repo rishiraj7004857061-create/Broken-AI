@@ -5,12 +5,12 @@
 
 <div align="center">
 
-```
+<pre>
 ╔══════════════════════════════════════════════════════════════╗
-║         "He had 3 hours of access left.                     ║
-║          He used every single minute."                      ║
+║               "He had 3 hours of access left.                ║
+║                He used every single minute."                 ║
 ╚══════════════════════════════════════════════════════════════╝
-```
+</pre>
 
 **⏱ Duration:** 3 Hours &nbsp;|&nbsp; **👥 Team Size:** 3 Members &nbsp;|&nbsp; **🏆 Max Score:** 600 Points
 
