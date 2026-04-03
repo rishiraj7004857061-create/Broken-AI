@@ -93,24 +93,52 @@ He didn't break anything obvious.
 
 ### Install
 
+1. **Fork the repository** on GitHub: [https://github.com/ayanokojix21/Broken-AI](https://github.com/ayanokojix21/Broken-AI)
+2. **Clone your fork** to your local machine:
+
 ```bash
-git clone <repo-url>
-cd nexalearn-ai
+git clone https://github.com/<your-username>/Broken-AI
+cd Broken-AI
+```
 
-# Set your Groq API key
-export GROQ_API_KEY="gsk_your_key_here"
+3. **Create a virtual environment**
+```bash
+# On Windows:
+python -m venv venv
+# On macOS/Linux:
+python3 -m venv venv
+```
 
+4. **Activate the virtual environment**
+```bash
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
+```
+
+5. **Set up environment variables**
+```bash
+# Copy the example file (Windows: copy .env.example .env)
+cp .env.example .env
+# Open .env in your editor and add your Groq API Key!
+```
+
+6. **Install dependencies**
+```bash
 pip install -r requirements.txt
 ```
 
 ### Run
 
-```bash
-# Terminal 1 — Backend API
-uvicorn api_main:app --host 0.0.0.0 --port 8000 --reload
+The ML pipeline needs to generate the model files before the API can start correctly.
 
-# Terminal 2 — ML Pipeline (generates model files first)
+```bash
+# Terminal 1 — ML Pipeline (Run this FIRST)
 python ml_pipeline.py
+
+# Terminal 2 — Backend API
+uvicorn api_main:app --host 0.0.0.0 --port 8000 --reload
 
 # Terminal 3 — Streamlit Dashboard
 streamlit run app.py
