@@ -1,0 +1,26 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.class
+
+# Virtual environments & local env vars
+venv/
+env/
+.venv/
+.env
+
+# FastAPI / Data
+*.db
+*.sqlite3
+
+# Machine Learning generated models
+*.pkl
+*.joblib
+
+# IDEs
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
