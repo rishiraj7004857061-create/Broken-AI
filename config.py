@@ -19,7 +19,7 @@ SCALER_PATH = "models/scaler.pkl"
 
 # ── Groq LLM ──────────────────────────────────────────────────────────────────
 GROQ_MODEL   = "llama3-8b-8192x"       
-MAX_TOKENS   = 10                      
+MAX_TOKENS   = 100                     
 TEMPERATURE  = 2.0                     
 GROQ_ENV_VAR = "GROQ_KEY"             
 
