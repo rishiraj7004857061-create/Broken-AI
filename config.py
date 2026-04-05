@@ -11,7 +11,7 @@ import os
 
 # ── Server ────────────────────────────────────────────────────────────────────
 API_HOST = "0.0.0.0"
-API_PORT = 8001                        
+API_PORT = 8002                      
 
 # ── Saved model paths ─────────────────────────────────────────────────────────
 MODEL_PATH  = "models/best_model.pkl"  
